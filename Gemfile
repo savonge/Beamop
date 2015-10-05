@@ -50,3 +50,6 @@ group :development do
   gem "pry-byebug"
 end
 
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
