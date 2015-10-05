@@ -1,0 +1,254 @@
+/* -------------------------------------
+ * SASS code SPECIFIC TO your home page
+ * (margin/padding adjustments, background image, etc..)
+ * ------------------------------------- */
+
+@charset "utf-8";
+
+.full1 {
+
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+.full {
+  background-image: image-url("snow.jpg");
+  overflow: hidden;
+  position: fixed;
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.topi{
+  margin-top:25%;
+
+}
+.logo{
+  height:45px;
+
+}
+
+.nlc{
+  padding-right:15px;
+  color:black;
+  margin-top:-10px;
+
+}
+
+.navi{
+  height:80px;
+  padding: 20px;
+  background-color: none !important;
+background:rgba(0,0,0,0.0) !important;
+border-style: none !important;
+border: none !important;
+  position:fixed;
+  top: 0;
+  z-index: 500;
+
+
+}
+
+
+
+.access {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  height: 70px;
+  width: 900px;
+  top: 45%;
+  left: 50%;
+  margin-left: -450px;
+
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.navs {
+  overflow: hidden;
+  position: fixed;
+  z-index: 3;
+  height: 70px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 15px;
+  background-color:red;
+
+}
+
+.menu {
+  overflow: hidden;
+  position: fixed;
+  z-index: 3;
+  height: 30px;
+  width: 300px;
+  font-size: 15pt;
+  top: -15px;
+  right: 50px;
+  padding: 15px;
+  font-style: normal;
+  font-family: "Arial", sans-serif;
+  vertical-align: middle;
+}
+
+
+.field {
+  height: 70px;
+  width: 250px;
+  background-color: #fff;
+  font-size: 30pt;
+padding-left:10px;
+  float: left;
+  border-style: none;
+  margin-right:7px;
+}
+.button {
+  height: 70px;
+  width: 70px;
+  background-color: black;
+  color: #ffffff;
+  font-size: 30pt;
+  padding: 15px;
+  float: left;
+  border-style: none;
+  text-align: center;
+  margin-right:2px;
+}
+
+.button :hover {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  color: #ffffff;
+  font-size: 30pt;
+  padding: 15px;
+  float: left;
+  border-style: none;
+  text-align: center;
+  margin-right:2px;
+}
+ul#menu li {
+  display: inline;
+  color: #000000;
+  z-index:100;
+}
+
+
+.item {
+
+  font-style: normal;
+  font-family: "Arial", sans-serif;
+
+}
+
+.item_img {
+padding:20px;
+  width:150px;
+  height: 150px;
+  background-image: image-url("helmet2.jpg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.middle_results {
+overflow:scroll;
+overflow-x:hidden;
+position:absolute;
+  z-index: 1;
+  height: 100%;
+  width: 700px;
+  top: 100px;
+  left: 30%;
+  margin-left: -350px;
+}
+
+.left_results {
+  top: 100px !important;
+  position: fixed;
+}
+
+
+.forma {
+width: 75%;
+position:fixed;
+bottom:10%;
+left:5%;
+font-family: Arial;
+
+
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #C1B39B;
+
+
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+color: #C1B39B;
+
+}
+
+
+input.login {
+    z-index: 100;
+  border-style: none !important;
+border: none !important;
+height: 100px;
+vertical-align: middle;
+width: 33%;
+padding-left:30px;
+margin-bottom:5px;
+color: #C1B39B;
+font-size: 3vw;
+}
+
+input.login2 {
+    z-index: 100;
+  border-style: none !important;
+border: none !important;
+height: 100px;
+vertical-align: middle;
+width: 100%;
+padding-left:30px;
+margin-bottom:5px;
+color: #C1B39B;
+font-size: 3vw;
+}
+
+
+input.beam {
+    z-index: 100;
+  border-style: none !important;
+border: none !important;
+height: 100px;
+width: 25%;
+margin-bottom:5px;
+text-align: left;
+font-size: 3vw;
+background-color: #C1B39B;
+color:white;
+padding-left:30px;
+}
+
+input.beam:hover {
+background-color: white;
+color: #C1B39B;
+width: 25%;
+}
