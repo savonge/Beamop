@@ -1,20 +1,12 @@
-<p id="notice"><%= notice %></p>
-
 <div class='poster'><p>
-  <strong>Url:</strong>
-  <%= @page.url %>
-</p>
 
-<p>
-  <strong>Headline:</strong>
+<p class="headline">
   <%= @page.headline %>
 </p>
 
-<p>
-  <strong>Content:</strong>
+<p class="bodytxt ">
   <%= @page.content %>
 </p>
 
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<%= link_to 'Edit', new_page_path(@page) %>
 </div>
