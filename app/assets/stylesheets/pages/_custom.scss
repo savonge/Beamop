@@ -314,27 +314,48 @@ padding-right: 10px;
 // headline styles
 
 .headline {
-  position:relative;
+position:relative;
 font-size: 10vw;
 color: white;
 padding-top:15%;
 }
 
-.tech {font-family: 'Source Code Pro', ;}
 
-.fashion {
-  font-family: 'Abril Fatface', cursive;
-}
+.fashion1 {font-family: 'Abril Fatface', cursive;}
+.fashion2 {font-family: 'Vollkorn', serif;}
+.fashion3 {font-family: 'Voltaire', sans-serif;}
 
-.neutral {font-family: 'Roboto', sans-serif;}
+.tech1 {font-family: 'Source Code Pro', ;}
+.tech2 {font-family: 'Droid Sans', sans-serif;}
+.tech3 {font-family: 'Fjalla One', sans-serif;}
 
-.music {font-family: 'Knewave', cursive;}
 
-.travel {font-family: 'Sirin Stencil', cursive;}
+.neutral1 {font-family: 'Roboto', sans-serif;}
+.neutral2 {font-family: 'Roboto', sans-serif;}
+.neutral3 {font-family: 'Roboto', sans-serif;}
 
-.academic {font-family: 'Quicksand', sans-serif;}
 
-// image selectors
+
+.music1 {font-family: 'Knewave', cursive;}
+.music2 {font-family: 'Permanent Marker', cursive;}
+.music3 {font-family: 'Playfair Display', serif;}
+
+
+
+.travel1 {font-family: 'Sirin Stencil', cursive;}
+.travel2 {font-family: 'Poiret One', cursive;}
+.travel3 {font-family: 'Pacifico', cursive;}
+
+
+
+.academic1 {font-family: 'Quicksand', sans-serif;}
+.academic2 {font-family: 'Kelly Slab', cursive;}
+.academic3 {font-family: 'Buda', cursive;}
+
+
+.personal1 {font-family: 'Amatic SC', cursive;}
+.personal2 {font-family: 'Dancing Script', cursive;}
+.personal3 {font-family: 'Handlee', cursive;}
 
 
 .poster {
@@ -354,24 +375,41 @@ text-align: center;
 }
 
 
-.bg-neutral {
-background-image: image-url("1.jpg");
+.bg-neutral1 {background-image: image-url("1.jpg");}
+.bg-neutral2 {background-image: image-url("1.jpg");}
+.bg-neutral3 {background-image: image-url("1.jpg");}
 
-}
-.bg-tech {
-background-image: image-url("tech.jpg");
-}
-.bg-fashion {
-background-image: image-url("fashion.ashx");
-}
-.bg-music {
-background-image: image-url("music.jpg");
-}
-.bg-travel {
-background-image: image-url("travel.jpg");
-}
-.bg-academic {
-background-image: image-url("academic.jpg");
-}
+
+.bg-tech1 {background-image: image-url("tech.jpg");}
+.bg-tech2 {background-image: image-url("tech2.jpg");}
+.bg-tech3 {background-image: image-url("tech3.jpg");}
+
+
+.bg-fashion1 {background-image: image-url("fashion.ashx");}
+.bg-fashion2 {background-image: image-url("fashion2.jpg");}
+.bg-fashion3 {background-image: image-url("fashion3.jpg");}
+
+
+.bg-music1 {background-image: image-url("music.jpg");}
+.bg-music2 {background-image: image-url("music.jpg");}
+.bg-music3 {background-image: image-url("music.jpg");}
+
+
+.bg-travel1 {background-image: image-url("travel.jpg");}
+.bg-travel2 {background-image: image-url("travel2.jpg");}
+.bg-travel3 {background-image: image-url("travel.jpg");}
+
+
+.bg-academic1 {background-image: image-url("academic.jpg");}
+.bg-academic2 {background-image: image-url("academic.jpg");}
+.bg-academic3 {background-image: image-url("academic.jpg");}
+
+.bg-personal1 {background-image: image-url("1.jpg");}
+.bg-personal2 {background-image: image-url("1.jpg");}
+.bg-personal3 {background-image: image-url("1.jpg");}
+
+
+
+
 
 
