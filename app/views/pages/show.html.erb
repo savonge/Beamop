@@ -1,6 +1,7 @@
-<div class='poster'><p>
 
-<p class="headline">
+<div class='poster <%= @page.backgroundimage %>'><p>
+
+<p class="headline <%= @page.h1_style %>">
   <%= @page.headline %>
 </p>
 
@@ -8,5 +9,10 @@
   <%= @page.content %>
 </p>
 
-<%= link_to 'Edit', new_page_path(@page) %>
+
 </div>
+<!-- <div class="back"><%= link_to '← Back', new_page_path(@page) %></div> -->
+
+
+
+<a href="/pages/new"><div class="back">← Back</div></a>
