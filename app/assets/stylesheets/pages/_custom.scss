@@ -38,7 +38,7 @@
 
 }
 .logo{
-  height:50px;
+  height:40px;
 
 }
 
@@ -193,9 +193,8 @@ position:absolute;
 .forma {
 width: 75%;
 position:fixed;
-bottom:10%;
+bottom:30%;
 left:5%;
-font-family: Arial;
 
 
 }
@@ -212,12 +211,13 @@ color: #C1B39B;
 
 
 input.login {
-    z-index: 100;
-  border-style: none !important;
+font-family: 'Roboto', sans-serif;
+z-index: 100;
+border-style: none !important;
 border: none !important;
 height: 100px;
 vertical-align: middle;
-width: 33%;
+width: 64%;
 padding-left:30px;
 margin-bottom:5px;
 color: #C1B39B;
@@ -225,12 +225,13 @@ font-size: 3vw;
 }
 
 input.login2 {
-    z-index: 100;
-  border-style: none !important;
+font-family: 'Roboto', sans-serif;
+z-index: 100;
+border-style: none !important;
 border: none !important;
 height: 100px;
 vertical-align: middle;
-width: 100%;
+width: 96.7%;
 padding-left:30px;
 margin-bottom:5px;
 color: #C1B39B;
@@ -238,25 +239,47 @@ font-size: 3vw;
 }
 
 
-input.beam {
-    z-index: 100;
-  border-style: none !important;
-border: none !important;
-height: 100px;
-width: 25%;
-margin-bottom:5px;
-text-align: left;
-font-size: 3vw;
-background-color: #C1B39B;
-color:white;
-padding-left:30px;
-}
+// input.beam {
+// z-index: 100;
+// border-style: none !important;
+// border: none !important;
+// height: 100px;
+// width: 32%;
+// margin-bottom:5px;
+// margin-right:5px;
+// text-align: left;
+// font-size: 3vw;
+// background-color: #C1B39B;
+// color:white;
+// padding-left:30px;
+// font-family: 'Roboto', sans-serif;
+// font-weight: 300;
 
-input.beam:hover {
-background-color: white;
-color: #C1B39B;
-width: 25%;
-}
+// background-image: image-url("arrow-05.png");
+//   overflow: hidden;
+//   position: relative;
+//   background-repeat: no-repeat;
+//     background-position: 90% 55%;
+//     background-size: 12%;
+// }
+
+// input.beam:hover {
+// background-color: white;
+// color: #C1B39B;
+// background-image: image-url("arrow-04.png");
+// overflow: hidden;
+// position: relative;
+// background-repeat: no-repeat;
+// background-position: 90% 55%;
+// background-size: 12%;
+// }
+// /* Small Devices, Tablets */
+// @media only screen and (max-width : 768px) {
+//   input.beam {
+//     width: 100%;
+//   }
+// }
+
 
 .bodytxt {
   font-family: 'Raleway', sans-serif;
@@ -267,8 +290,8 @@ color: white;
 width:75%;
 height:33%;
 margin: auto;
-  position: relative;
-  top: 0; left: 0; bottom: 0; right: 0;
+position: relative;
+top: 0; left: 0; bottom: 0; right: 0;
 }
 
 
@@ -278,8 +301,8 @@ font-size: 1vw;
 font-weight: Regular;
 color: red;
 margin: auto;
-  position: relative;
-  top: 0; left: 0; bottom: 0; right: 0;
+position: relative;
+top: 0; left: 0; bottom: 0; right: 0;
 z-index:500;
 
 }
@@ -288,8 +311,8 @@ z-index:500;
 
 
 .back {
-  background-color:white;
-  position:absolute;
+background-color:white;
+position:absolute;
 font-size: 1vw;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
@@ -313,12 +336,12 @@ padding-right: 10px;
 
 // headline styles
 
-.headline {
-position:relative;
-font-size: 10vw;
-color: white;
-padding-top:15%;
-}
+// .headline {
+// position:relative;
+// font-size: 10vw;
+// color: white;
+// padding-top:15%;
+// }
 
 
 .fashion1 {font-family: 'Abril Fatface', cursive;}
@@ -358,58 +381,215 @@ padding-top:15%;
 .personal3 {font-family: 'Handlee', cursive;}
 
 
-.poster {
+// .poster {
+// width: 100%;
+// text-align: center;
+// position: fixed;
+// overflow: hidden;
+// background-repeat: no-repeat;
+// background-position: center;
+// background-size: cover;
+// height: 100%;
+// width: 100%;
+// margin: auto;
+// position: absolute;
+// top: 0; left: 0; bottom: 0; right: 0;
+
+// }
+
+
+.parent {
+display: table;
 width: 100%;
-text-align: center;
-  position: fixed;
-  overflow: hidden;
-  background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+overflow: hidden;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+
+
+
+
+}
+
+.child {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+ }
+
+
+.bg-neutral1 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-neutral2 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-neutral3 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+
+.bg-tech1 {background-image: image-url("tech.jpg"); text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-tech2 {background-image: image-url("tech2.jpg"); text-align: center; font-size: 10vw; color: white; padding-top:10%;}
+.bg-tech3 {background-image: image-url("tech3.jpg"); text-align: center; font-size: 10vw; color: white; padding-top:10%;}
+
+
+.bg-fashion1 {background-image: image-url("fashion.ashx");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-fashion2 {background-image: image-url("fashion2.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-fashion3 {background-image: image-url("fashion3.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+
+.bg-music1 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-music2 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-music3 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+
+.bg-travel1 {background-image: image-url("travel.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-travel2 {background-image: image-url("travel2.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-travel3 {background-image: image-url("travel.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+
+.bg-academic1 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-academic2 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-academic3 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+.bg-personal1 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-personal2 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-personal3 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+
+input.button {
+z-index: 100;
+border-style: none !important;
+border: none !important;
+height: 100px;
+width: 32%;
+margin-bottom:5px;
+margin-right:5px;
+text-align: left;
+font-size: 3vw;
+padding-left:30px;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
 
 }
 
 
-.bg-neutral1 {background-image: image-url("1.jpg");}
-.bg-neutral2 {background-image: image-url("1.jpg");}
-.bg-neutral3 {background-image: image-url("1.jpg");}
+.beam {
+background-image: image-url("arrow-05.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
+    background-color: #C1B39B;
+color:white;
+
+}
+
+.beam:hover {
+background-color: white;
+color: #C1B39B;
+background-image: image-url("arrow-04.png");
+overflow: hidden;
+position: relative;
+background-repeat: no-repeat;
+background-position: 90% 55%;
+background-size: 12%;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  input.button {
+    width: 100%;
+    font-size: 6vw;
+    height: 80px;
+    background-position: 95% 55%;
+background-size: 7%;
+  }
+    input.button:hover {
+    width: 100%;
+    font-size: 6vw;
+    height: 80px;
+    background-position: 95% 55%;
+background-size: 7%;
+  }
 
 
-.bg-tech1 {background-image: image-url("tech.jpg");}
-.bg-tech2 {background-image: image-url("tech2.jpg");}
-.bg-tech3 {background-image: image-url("tech3.jpg");}
+  input.login{
+width: 100%;
+    font-size: 6vw;
+    height: 80px;
+
+  }
+
+  input.login2{
+width: 100%;
+    font-size: 6vw;
+    height: 80px;
+  }
 
 
-.bg-fashion1 {background-image: image-url("fashion.ashx");}
-.bg-fashion2 {background-image: image-url("fashion2.jpg");}
-.bg-fashion3 {background-image: image-url("fashion3.jpg");}
+  .forma{
+width:90%;
+    bottom: 30px;
+  }
+
+}
 
 
-.bg-music1 {background-image: image-url("music.jpg");}
-.bg-music2 {background-image: image-url("music.jpg");}
-.bg-music3 {background-image: image-url("music.jpg");}
+.add {
+  background-color: white;
+  color: #C1B39B;
+background-image: image-url("arrow-04.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
+
+}
+
+.add:hover {
+background-color: #C1B39B;
+color:white;
+background-image: image-url("arrow-05.png");
+overflow: hidden;
+position: relative;
+background-repeat: no-repeat;
+background-position: 90% 55%;
+background-size: 12%;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  input.button {
+    width: 100%;
+  }
+}
 
 
-.bg-travel1 {background-image: image-url("travel.jpg");}
-.bg-travel2 {background-image: image-url("travel2.jpg");}
-.bg-travel3 {background-image: image-url("travel.jpg");}
 
+.drop {
+z-index: 100;
+border-style: none !important;
+border: none !important;
+height: 100px;
+width: 32%;
+margin-bottom:5px;
+margin-right:5px;
+text-align: left;
+font-size: 3vw;
+padding-left:30px;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+background-color: white;
+  color: #C1B39B;
+background-image: image-url("arrow-04.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
 
-.bg-academic1 {background-image: image-url("academic.jpg");}
-.bg-academic2 {background-image: image-url("academic.jpg");}
-.bg-academic3 {background-image: image-url("academic.jpg");}
-
-.bg-personal1 {background-image: image-url("1.jpg");}
-.bg-personal2 {background-image: image-url("1.jpg");}
-.bg-personal3 {background-image: image-url("1.jpg");}
-
-
-
+}
 
 
 

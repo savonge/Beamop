@@ -6,11 +6,13 @@
 <div class="forma">
     <%= f.text_field :headline, :placeholder => "Headline", :class => "login"%>
     <%= f.text_field :content, :placeholder => "Content", :class => "login2"%>
-    <%= f.submit "Beam it", :class => "beam" %><br>
+    <%= f.submit "Add Image", :class => "button add" %>
+    <%= f.submit "Add Logo", :class => "button add" %>
+    <%= f.submit "Add Button", :class => "button add" %>
+    <%= f.submit "Beam it", :class => "button beam" %><br>
 
     <div class="notice"><%= @page.errors[:headline].to_sentence %><br><%= @page.errors[:content].to_sentence %></div>
 
 <% end %>
 </div>
-
 
