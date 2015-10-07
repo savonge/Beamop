@@ -195,7 +195,6 @@ width: 75%;
 position:fixed;
 bottom:30%;
 left:5%;
-font-family: Arial;
 
 
 }
@@ -337,12 +336,12 @@ padding-right: 10px;
 
 // headline styles
 
-.headline {
-position:relative;
-font-size: 10vw;
-color: white;
-padding-top:15%;
-}
+// .headline {
+// position:relative;
+// font-size: 10vw;
+// color: white;
+// padding-top:15%;
+// }
 
 
 .fashion1 {font-family: 'Abril Fatface', cursive;}
@@ -382,10 +381,26 @@ padding-top:15%;
 .personal3 {font-family: 'Handlee', cursive;}
 
 
-.poster {
+// .poster {
+// width: 100%;
+// text-align: center;
+// position: fixed;
+// overflow: hidden;
+// background-repeat: no-repeat;
+// background-position: center;
+// background-size: cover;
+// height: 100%;
+// width: 100%;
+// margin: auto;
+// position: absolute;
+// top: 0; left: 0; bottom: 0; right: 0;
+
+// }
+
+
+.parent {
+display: table;
 width: 100%;
-text-align: center;
-position: fixed;
 overflow: hidden;
 background-repeat: no-repeat;
 background-position: center;
@@ -396,41 +411,50 @@ margin: auto;
 position: absolute;
 top: 0; left: 0; bottom: 0; right: 0;
 
+
+
+
 }
 
-
-.bg-neutral1 {background-image: image-url("1.jpg");}
-.bg-neutral2 {background-image: image-url("1.jpg");}
-.bg-neutral3 {background-image: image-url("1.jpg");}
-
-
-.bg-tech1 {background-image: image-url("tech.jpg");}
-.bg-tech2 {background-image: image-url("tech2.jpg");}
-.bg-tech3 {background-image: image-url("tech3.jpg");}
+.child {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+ }
 
 
-.bg-fashion1 {background-image: image-url("fashion.ashx");}
-.bg-fashion2 {background-image: image-url("fashion2.jpg");}
-.bg-fashion3 {background-image: image-url("fashion3.jpg");}
+.bg-neutral1 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-neutral2 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-neutral3 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
 
 
-.bg-music1 {background-image: image-url("music.jpg");}
-.bg-music2 {background-image: image-url("music.jpg");}
-.bg-music3 {background-image: image-url("music.jpg");}
+.bg-tech1 {background-image: image-url("tech.jpg"); text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-tech2 {background-image: image-url("tech2.jpg"); text-align: center; font-size: 10vw; color: white; padding-top:10%;}
+.bg-tech3 {background-image: image-url("tech3.jpg"); text-align: center; font-size: 10vw; color: white; padding-top:10%;}
 
 
-.bg-travel1 {background-image: image-url("travel.jpg");}
-.bg-travel2 {background-image: image-url("travel2.jpg");}
-.bg-travel3 {background-image: image-url("travel.jpg");}
+.bg-fashion1 {background-image: image-url("fashion.ashx");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-fashion2 {background-image: image-url("fashion2.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-fashion3 {background-image: image-url("fashion3.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
 
 
-.bg-academic1 {background-image: image-url("academic.jpg");}
-.bg-academic2 {background-image: image-url("academic.jpg");}
-.bg-academic3 {background-image: image-url("academic.jpg");}
+.bg-music1 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-music2 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-music3 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
 
-.bg-personal1 {background-image: image-url("1.jpg");}
-.bg-personal2 {background-image: image-url("1.jpg");}
-.bg-personal3 {background-image: image-url("1.jpg");}
+
+.bg-travel1 {background-image: image-url("travel.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-travel2 {background-image: image-url("travel2.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-travel3 {background-image: image-url("travel.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+
+.bg-academic1 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-academic2 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-academic3 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+
+.bg-personal1 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-personal2 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
+.bg-personal3 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw;  color: white; padding-top:10%;}
 
 
 input.button {
@@ -476,7 +500,39 @@ background-size: 12%;
 @media only screen and (max-width : 768px) {
   input.button {
     width: 100%;
+    font-size: 6vw;
+    height: 80px;
+    background-position: 95% 55%;
+background-size: 7%;
   }
+    input.button:hover {
+    width: 100%;
+    font-size: 6vw;
+    height: 80px;
+    background-position: 95% 55%;
+background-size: 7%;
+  }
+
+
+  input.login{
+width: 100%;
+    font-size: 6vw;
+    height: 80px;
+
+  }
+
+  input.login2{
+width: 100%;
+    font-size: 6vw;
+    height: 80px;
+  }
+
+
+  .forma{
+width:90%;
+    bottom: 30px;
+  }
+
 }
 
 
@@ -508,3 +564,32 @@ background-size: 12%;
     width: 100%;
   }
 }
+
+
+
+.drop {
+z-index: 100;
+border-style: none !important;
+border: none !important;
+height: 100px;
+width: 32%;
+margin-bottom:5px;
+margin-right:5px;
+text-align: left;
+font-size: 3vw;
+padding-left:30px;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+background-color: white;
+  color: #C1B39B;
+background-image: image-url("arrow-04.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
+
+}
+
+
+
