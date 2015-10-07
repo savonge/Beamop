@@ -38,7 +38,7 @@
 
 }
 .logo{
-  height:50px;
+  height:40px;
 
 }
 
@@ -212,8 +212,8 @@ color: #C1B39B;
 
 
 input.login {
-    z-index: 100;
-  border-style: none !important;
+z-index: 100;
+border-style: none !important;
 border: none !important;
 height: 100px;
 vertical-align: middle;
@@ -225,8 +225,8 @@ font-size: 3vw;
 }
 
 input.login2 {
-    z-index: 100;
-  border-style: none !important;
+z-index: 100;
+border-style: none !important;
 border: none !important;
 height: 100px;
 vertical-align: middle;
@@ -239,8 +239,8 @@ font-size: 3vw;
 
 
 input.beam {
-    z-index: 100;
-  border-style: none !important;
+z-index: 100;
+border-style: none !important;
 border: none !important;
 height: 100px;
 width: 25%;
@@ -250,13 +250,35 @@ font-size: 3vw;
 background-color: #C1B39B;
 color:white;
 padding-left:30px;
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+
+background-image: image-url("arrow-05.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
 }
 
 input.beam:hover {
 background-color: white;
 color: #C1B39B;
 width: 25%;
+background-image: image-url("arrow-04.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  input.beam {
+    width: 100%;
+  }
+}
+
 
 .bodytxt {
   font-family: 'Raleway', sans-serif;
