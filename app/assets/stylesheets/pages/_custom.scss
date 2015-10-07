@@ -193,7 +193,7 @@ position:absolute;
 .forma {
 width: 75%;
 position:fixed;
-bottom:10%;
+bottom:30%;
 left:5%;
 font-family: Arial;
 
@@ -212,12 +212,13 @@ color: #C1B39B;
 
 
 input.login {
+font-family: 'Roboto', sans-serif;
 z-index: 100;
 border-style: none !important;
 border: none !important;
 height: 100px;
 vertical-align: middle;
-width: 33%;
+width: 64%;
 padding-left:30px;
 margin-bottom:5px;
 color: #C1B39B;
@@ -225,12 +226,13 @@ font-size: 3vw;
 }
 
 input.login2 {
+font-family: 'Roboto', sans-serif;
 z-index: 100;
 border-style: none !important;
 border: none !important;
 height: 100px;
 vertical-align: middle;
-width: 100%;
+width: 96.7%;
 padding-left:30px;
 margin-bottom:5px;
 color: #C1B39B;
@@ -238,46 +240,46 @@ font-size: 3vw;
 }
 
 
-input.beam {
-z-index: 100;
-border-style: none !important;
-border: none !important;
-height: 100px;
-width: 25%;
-margin-bottom:5px;
-text-align: left;
-font-size: 3vw;
-background-color: #C1B39B;
-color:white;
-padding-left:30px;
-font-family: 'Roboto', sans-serif;
-font-weight: 300;
+// input.beam {
+// z-index: 100;
+// border-style: none !important;
+// border: none !important;
+// height: 100px;
+// width: 32%;
+// margin-bottom:5px;
+// margin-right:5px;
+// text-align: left;
+// font-size: 3vw;
+// background-color: #C1B39B;
+// color:white;
+// padding-left:30px;
+// font-family: 'Roboto', sans-serif;
+// font-weight: 300;
 
-background-image: image-url("arrow-05.png");
-  overflow: hidden;
-  position: relative;
-  background-repeat: no-repeat;
-    background-position: 90% 55%;
-    background-size: 12%;
-}
+// background-image: image-url("arrow-05.png");
+//   overflow: hidden;
+//   position: relative;
+//   background-repeat: no-repeat;
+//     background-position: 90% 55%;
+//     background-size: 12%;
+// }
 
-input.beam:hover {
-background-color: white;
-color: #C1B39B;
-width: 25%;
-background-image: image-url("arrow-04.png");
-  overflow: hidden;
-  position: relative;
-  background-repeat: no-repeat;
-    background-position: 90% 55%;
-    background-size: 12%;
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-  input.beam {
-    width: 100%;
-  }
-}
+// input.beam:hover {
+// background-color: white;
+// color: #C1B39B;
+// background-image: image-url("arrow-04.png");
+// overflow: hidden;
+// position: relative;
+// background-repeat: no-repeat;
+// background-position: 90% 55%;
+// background-size: 12%;
+// }
+// /* Small Devices, Tablets */
+// @media only screen and (max-width : 768px) {
+//   input.beam {
+//     width: 100%;
+//   }
+// }
 
 
 .bodytxt {
@@ -289,8 +291,8 @@ color: white;
 width:75%;
 height:33%;
 margin: auto;
-  position: relative;
-  top: 0; left: 0; bottom: 0; right: 0;
+position: relative;
+top: 0; left: 0; bottom: 0; right: 0;
 }
 
 
@@ -300,8 +302,8 @@ font-size: 1vw;
 font-weight: Regular;
 color: red;
 margin: auto;
-  position: relative;
-  top: 0; left: 0; bottom: 0; right: 0;
+position: relative;
+top: 0; left: 0; bottom: 0; right: 0;
 z-index:500;
 
 }
@@ -310,8 +312,8 @@ z-index:500;
 
 
 .back {
-  background-color:white;
-  position:absolute;
+background-color:white;
+position:absolute;
 font-size: 1vw;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
@@ -383,16 +385,16 @@ padding-top:15%;
 .poster {
 width: 100%;
 text-align: center;
-  position: fixed;
-  overflow: hidden;
-  background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+position: fixed;
+overflow: hidden;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
 
 }
 
@@ -431,7 +433,78 @@ text-align: center;
 .bg-personal3 {background-image: image-url("1.jpg");}
 
 
+input.button {
+z-index: 100;
+border-style: none !important;
+border: none !important;
+height: 100px;
+width: 32%;
+margin-bottom:5px;
+margin-right:5px;
+text-align: left;
+font-size: 3vw;
+padding-left:30px;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+
+}
 
 
+.beam {
+background-image: image-url("arrow-05.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
+    background-color: #C1B39B;
+color:white;
+
+}
+
+.beam:hover {
+background-color: white;
+color: #C1B39B;
+background-image: image-url("arrow-04.png");
+overflow: hidden;
+position: relative;
+background-repeat: no-repeat;
+background-position: 90% 55%;
+background-size: 12%;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  input.button {
+    width: 100%;
+  }
+}
 
 
+.add {
+  background-color: white;
+  color: #C1B39B;
+background-image: image-url("arrow-04.png");
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+    background-position: 90% 55%;
+    background-size: 12%;
+
+}
+
+.add:hover {
+background-color: #C1B39B;
+color:white;
+background-image: image-url("arrow-05.png");
+overflow: hidden;
+position: relative;
+background-repeat: no-repeat;
+background-position: 90% 55%;
+background-size: 12%;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  input.button {
+    width: 100%;
+  }
+}
