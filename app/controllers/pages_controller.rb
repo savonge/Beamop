@@ -11,11 +11,17 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
-@page = Page.find(params[:id])
+    @page = Page.find(params[:id])
+    @page_bg = @page.backgroundimage
+    @page_h1 = @page.h1_style
   end
 
   def publish
     @user = current_user
+
+    @page_h1 = params[:h1_style]
+    @page_bg = params[:bg_style]
+
     @page.user = @user
     @page.save
     render :show
