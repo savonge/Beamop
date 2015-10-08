@@ -2,9 +2,10 @@
 
 <h1>Listing Pages</h1>
 
-<table>
+<table class='table-bordered' style="padding:22px">
   <thead>
     <tr>
+    <th>User_id</th>
       <th>Url</th>
       <th>Headline</th>
       <th>Content</th>
@@ -15,6 +16,10 @@
   <tbody>
     <% @pages.each do |page| %>
       <tr>
+<td><% if page.user %>
+<%= page.user.email %>
+<% end %>
+</td>
         <td><%= page.url %></td>
         <td><%= page.headline %></td>
         <td><%= page.content %></td>

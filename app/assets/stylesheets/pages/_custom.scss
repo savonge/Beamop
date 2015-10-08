@@ -15,6 +15,7 @@
   width: 100%;
   top: 0px;
   left: 0px;
+  z-index: 0;
 }
 
 
@@ -32,6 +33,7 @@
   top: 0px;
   left: 0px;
 }
+
 
 .topi{
   margin-top:25%;
@@ -61,6 +63,32 @@ border: none !important;
   position:fixed;
   top: 0;
   z-index: 500;
+
+
+}
+
+.navi2{
+
+  z-index: 5000;
+  background-color: none !important;
+background:rgba(0,0,0,0.0) !important;
+border-style: none !important;
+border: none !important;
+color:white !important;
+
+
+}
+
+.navilinks{
+
+color:red !important;
+
+
+}
+
+.centerlinks{
+
+margin-left: 40%;
 
 
 }
@@ -322,6 +350,23 @@ left:1%;
 width: auto;
 padding: 5px;
 padding-right: 10px;
+border:none;
+
+}
+
+.next {
+background-color:white;
+position:absolute;
+font-size: 1vw;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+color: #C1B39B;
+top:1%;
+left:49%;
+width: auto;
+padding: 5px;
+padding-right: 10px;
+border: none;
 
 }
 

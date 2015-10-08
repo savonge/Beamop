@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:show, :edit, :update, :destroy, :publish]
 
+  before_filter :authenticate_user!, only: [:publish]
   # GET /pages
   # GET /pages.json
   def index
@@ -10,7 +11,14 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+@page = Page.find(params[:id])
+  end
 
+  def publish
+    @user = current_user
+    @page.user = @user
+    @page.save
+    render :show
   end
 
   # GET /pages/new
@@ -62,6 +70,11 @@ class PagesController < ApplicationController
     end
   end
 
+def show_public_page
+      @page = Page.find_by(url: params[:genurl])
+      render :show
+    end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_page
@@ -72,4 +85,6 @@ class PagesController < ApplicationController
     def page_params
       params.require(:page).permit(:url, :headline, :content)
     end
+
+
 end

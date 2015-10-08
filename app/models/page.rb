@@ -1,4 +1,6 @@
 class Page < ActiveRecord::Base
+before_create :set_url
+  belongs_to :user
 
 validates :headline, :presence => true, :length => {
   :maximum => 12,
@@ -11,7 +13,6 @@ validates :content, :length => {
   :tokenizer => lambda { |str| str.scan(/\w+/) },
   :too_long  => "Content should be maximum 36 words"
 }
-
 H1_STYLES = {
 
 ["wagon", "accelerator", "innovate", "innovation", "programming", "code", "tech", "start", "bootcamp", "internet", "app"] => "tech",
@@ -55,20 +56,10 @@ def detect_style(text, rules, default_style)
 end
 
 
+def set_url
+  self.url = rand(1..1000)
 
 end
 
 
-# if headline.include?('Wagon')
-#       'tech'
-#     elsif headline.include?('Sale')
-#        'fashion'
-#        elsif headline.include?('Live')
-#        'music'
-#        elsif headline.include?('Vacation')
-#        'travel'
-#        elsif headline.include?('Ted')
-#        'acedemic'
-#     else
-#       'neutral'
-#     end
+end
