@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-before_create :set_url
+
   belongs_to :user
 
 validates :headline, :presence => true, :length => {
@@ -55,6 +55,9 @@ def detect_style(text, rules, default_style)
   default_style
 end
 
+  def published?
+    url != nil
+  end
 
 def set_url
   self.url = rand(1..1000)

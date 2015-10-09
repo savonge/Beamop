@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'publications/:genurl' => 'pages#show_public_page'
+  get 'publications/:genurl' => 'pages#show_public_page', as: 'public'
   root 'pages#new'
 end
