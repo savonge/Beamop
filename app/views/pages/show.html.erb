@@ -34,6 +34,7 @@
 
        <ul class="nav navbar-nav navbar-center centerlinks">
          <li><%= link_to "← Back", new_page_path, :method => :get, :class => "navilinks" %></li>
+            <li><%= link_to "Next Design", page_path(@page, h1_style: @page_h1, bg_style: @page_bg),:class => "navilinks" %></li>
 
        </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -47,7 +48,16 @@
 
 
         <li>
-<%= link_to "Publish Campaign", publish_page_path(@page, h1_style: @page_h1, bg_style: @page_bg), method: "post", :class => "navilinks" %></li>
+        <%= link_to "Publish Campaign", publish_page_path(@page, h1_style: @page_h1, bg_style: @page_bg), method: "post", :class => "navilinks" %></li>
+
+
+
+
+
+
+
+
+
         <!-- <li class="dropdown navilinks">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Publish Campaign <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -63,6 +73,11 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<% if @page.published? %>
+<div class="showurl"><%= link_to "#{public_url(genurl: @page.url)}", public_url(genurl: @page.url), :target => "_blank" %><br>
+
+</div>
+<% end %>
 
 
 

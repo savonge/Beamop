@@ -12,19 +12,26 @@ class PagesController < ApplicationController
   # GET /pages/1.json
   def show
     @page = Page.find(params[:id])
-    @page_bg = @page.backgroundimage
-    @page_h1 = @page.h1_style
+    @page_bg = @page.bg_style || @page.backgroundimage
+    @page_h1 = @page.headline_style || @page.h1_style
   end
 
   def publish
+
     @user = current_user
 
     @page_h1 = params[:h1_style]
     @page_bg = params[:bg_style]
 
+    @page.headline_style = params[:h1_style]
+    @page.bg_style = params[:bg_style]
     @page.user = @user
+    @page.set_url
     @page.save!
-    render :show
+
+    # redirect_to public_path(genurl: @page.url)
+
+    redirect_to @page
   end
 
   # GET /pages/new
@@ -78,7 +85,9 @@ class PagesController < ApplicationController
 
 def show_public_page
       @page = Page.find_by(url: params[:genurl])
-      render :show
+      @page_bg = @page.bg_style
+      @page_h1 = @page.headline_style
+      render :publish
     end
 
   private
