@@ -23,7 +23,7 @@ class PagesController < ApplicationController
     @page_bg = params[:bg_style]
 
     @page.user = @user
-    @page.save
+    @page.save!
     render :show
   end
 
