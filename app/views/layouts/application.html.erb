@@ -3,7 +3,8 @@
 <head>
    <title><%= yield(:title) || "Your App name" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <% # javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
    <!-- Add these line for detecting device width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,16 @@
 <%= yield(:head) %>
 <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Knewave|Abril+Fatface|Sirin+Stencil|Quicksand|Pacifico|Amatic+SC|Dancing+Script|Permanent+Marker|Handlee|Poiret+One|Droid+Sans|Fjalla+One|Vollkorn|Voltaire|Kelly+Slab|Buda:300|Roboto|Playfair+Display' rel='stylesheet' type='text/css'>
 
+<!-- supersized gallery! -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<!-- supersized gallery! -->
+
+
+
 
 
 </head>
@@ -21,7 +32,7 @@
 
 
   <%= yield %>
-  <%= javascript_include_tag 'application' %>
+
   <%= yield(:after_js) %>
 <!-- <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p> -->
