@@ -26,9 +26,6 @@ z-index: 5;
 }
 
 
-
-
-
 .full {
   background-image: image-url("2b.jpg");
   overflow: hidden;
@@ -42,6 +39,43 @@ z-index: 5;
   top: 0px;
   left: 0px;
 }
+
+
+.full2 {
+overflow: auto;
+position: absolute;
+  height: 1600px;
+  width: 100%;
+  padding-top: 120px;
+  left: 0px;
+  display: block;
+}
+
+// .contents{
+//   background-color:red;
+//      height: 1600px;
+//      padding: 20px;
+//      margin-left: -10px;
+//      margin-right: 0;
+//     padding-top: 120px;
+//     width:100%;
+//     overflow: scroll;
+//     z-index:500;
+//  }
+
+
+
+.bigtxt {
+position:relative;
+  height: 800px;
+  width: 500px;
+  left:5%;
+font-size: 26px;
+font-family: Roboto;
+color: white;
+}
+
+
 
 
 .topi{
@@ -234,8 +268,8 @@ position:absolute;
 
 .forma {
 width: 50%;
-position:fixed;
-bottom:20%;
+position:relative;
+top:200px;
 left:5%;
 
 
