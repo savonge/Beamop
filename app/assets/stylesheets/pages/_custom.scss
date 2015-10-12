@@ -7,27 +7,8 @@
 
 @charset "utf-8";
 
-.showurl {
-background-color:white;
-border: black solid thick;
-text-align: center;
-vertical-align: middle;
-left: 20%;
-right: 20%;
-top: 20%;
-bottom:20%;
-  position: fixed;
-  z-index: 5000;
-  color:black;
-  padding-top:15%;
-  text-decoration: underline;
-}
 
-.showurl a {
-  color:black;
-  font-size: 2vw;
 
-}
 .show {
 background-color:grey;
 height: 100%;
@@ -46,9 +27,6 @@ z-index: 5;
 }
 
 
-
-
-
 .full {
   background-image: image-url("2b.jpg");
   overflow: hidden;
@@ -62,6 +40,62 @@ z-index: 5;
   top: 0px;
   left: 0px;
 }
+
+
+.full2 {
+overflow: auto;
+position: absolute;
+  height: 2500px;
+  width: 100%;
+  padding-top: 120px;
+  left: 0px;
+  display: block;
+}
+
+
+// .contents{
+//   background-color:red;
+//      height: 1600px;
+//      padding: 20px;
+//      margin-left: -10px;
+//      margin-right: 0;
+//     padding-top: 120px;
+//     width:100%;
+//     overflow: scroll;
+//     z-index:500;
+//  }
+
+.formdiv {
+  width:100%;
+  height: 600px;
+
+}
+
+.bigtxt {
+position: absolute;
+  height: 1300px;
+  width: 90%;
+  left:5%;
+  top: 800px;
+line-height: 90%;
+font-size: 7vw;
+font-family: Abril Fatface;
+color: white;
+overflow:hidden;
+}
+
+.patxt {
+  width: 75%;
+  line-height: 120%;
+  left:5%;
+font-size: 2vw;
+font-family: roboto;
+color: white;
+// overflow:hidden;
+}
+
+
+
 
 
 .topi{
@@ -90,6 +124,20 @@ background:rgba(0,0,0,0.0) !important;
 border-style: none !important;
 border: none !important;
   position:fixed;
+  top: 0;
+  z-index: 500;
+}
+
+.navi3{
+  height:80px;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-right: 5%;
+  background-color: none !important;
+background:rgba(0,0,0,0.0) !important;
+border-style: none !important;
+border: none !important;
+  position:absolute;
   top: 0;
   z-index: 500;
 
@@ -254,8 +302,8 @@ position:absolute;
 
 .forma {
 width: 50%;
-position:fixed;
-bottom:20%;
+position:relative;
+top:100px;
 left:5%;
 
 
@@ -446,12 +494,12 @@ top: 0; left: 0; bottom: 0; right: 0;
 
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-color: #C1B39B;
+color: white;
 
 
 }
 input:-moz-placeholder, textarea:-moz-placeholder {
-color: #C1B39B;
+color: white;
 
 }
 
@@ -459,28 +507,28 @@ color: #C1B39B;
 input.login {
 font-family: 'Roboto', sans-serif;
 z-index: 100;
-border-style: none !important;
-border: none !important;
+border: 5px solid white !important;
+background: transparent;
+color: white !important;
 height: 100px;
 vertical-align: middle;
 width: 64%;
 padding-left:30px;
 margin-bottom:5px;
-color: #C1B39B;
 font-size: 2vw;
 }
 
 input.login2 {
 font-family: 'Roboto', sans-serif;
 z-index: 100;
-border-style: none !important;
-border: none !important;
+border: 5px solid white !important;
+background: transparent;
+color: white;
 height: 100px;
 vertical-align: middle;
 width: 96.7%;
 padding-left:30px;
 margin-bottom:5px;
-color: #C1B39B;
 font-size: 2vw;
 }
 
@@ -488,8 +536,9 @@ font-size: 2vw;
 
 input.button {
 z-index: 100;
-border-style: none !important;
-border: none !important;
+border: 5px solid white !important;
+background: transparent;
+color: white;
 height: 100px;
 width: 32%;
 margin-bottom:5px;
@@ -504,7 +553,7 @@ font-weight: 100;
 
 
 .beam {
-background-image: image-url("arrow-05.png");
+background-image: image-url("arroww2.png");
   overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
@@ -516,9 +565,9 @@ color:white;
 }
 
 .beam:hover {
-background-color: white;
-color: #C1B39B;
-background-image: image-url("arrow-04.png");
+background: transparent;
+color: white;
+background-image: image-url("arroww2.png");
 overflow: hidden;
 position: relative;
 background-repeat: no-repeat;
@@ -567,8 +616,8 @@ width:90%;
 
 .add {
   background-color: white;
-  color: #C1B39B;
-background-image: image-url("arrow-04.png");
+background:transparent;
+background-image: image-url("arroww1.png");
   overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
@@ -578,9 +627,9 @@ background-image: image-url("arrow-04.png");
 }
 
 .add:hover {
-background-color: #C1B39B;
+background: transparent;
 color:white;
-background-image: image-url("arrow-05.png");
+background-image: image-url("arroww1.png");
 overflow: hidden;
 position: relative;
 background-repeat: no-repeat;
@@ -620,5 +669,83 @@ background-size: 12%;
 
 }
 
+// =======================================
+
+// .showurl {
+// background-color: #090909;
+// border: black solid thick;
+// left: 20%;
+// right: 20%;
+// top: 20%;
+// bottom:20%;
+//   position: fixed;
+//   z-index: 5000;
+// }
 
 
+
+.showurl {
+background-color: #090909;
+border: black solid thick;
+width:930px;
+left:50%;
+margin-left: -475px;
+top:200px;
+  position: fixed;
+  z-index: 5000;
+  overflow: hidden;
+
+}
+
+.showurl a {
+  color:#ccc;
+  font-size: 1vw;
+
+}
+
+.divtop {
+
+  height:100%;
+  position:relative;
+  top:0;
+  padding:5px;
+  background-color: white;
+}
+
+.divbottom {
+background-color: #030303;
+  height:25%;
+  position:relative;
+  bottom:0;
+    padding:5px;
+}
+
+// iframe thumbnails
+
+.thumbframe1 {
+  width: 150px;
+  height: 270px;
+border:none;
+  overflow: hidden;
+  top:0;
+}
+
+.thumbframe2 {
+  width: 500px;
+  height: 270px;
+border:none;
+  overflow: hidden;
+}
+
+.thumbframe3 {
+  width: 270px;
+  height: 270px;
+border:none;
+  overflow: hidden;
+}
+/////////////////////
+
+.tg  {width:auto; height:100%; position:relative; background-color: #111111;}
+.tg td{padding:10px 10px; background-color:#222222; height:10%; font-size: 2vw; vertical-align:middle; margin-bottom:50px;}
+.tg th{font-size:14px;color:white; height:90%; text-align: center; }
+.tg .tg-baqh{text-align:center;vertical-align:middle}
