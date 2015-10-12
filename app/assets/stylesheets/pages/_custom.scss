@@ -107,6 +107,11 @@ color: white;
 
 }
 
+.logo2{
+  height:20px;
+
+}
+
 .nlc{
   padding-right:15px;
   color:black;
@@ -147,12 +152,14 @@ border: none !important;
 .navi2{
 
   z-index: 5000;
-  background-color: none !important;
-background:rgba(0,0,0,0.0) !important;
+  background-color: black;
+  color: white;
+//   background-color: none !important;
+background:rgba(0,0,0,0.5) !important;
 border-style: none !important;
 
-color:white !important;
-border-bottom: white solid thin;
+// color:white !important;
+// border-bottom: white solid thin;
 
 
 }
