@@ -1,7 +1,15 @@
-<meta property="og:{tagName}" content="{tagValue}"/>
-<meta property="og:image" content="image url goes here(canonical link)"/>
-<meta property="og:title" content="Headline goes here"/>
-<meta property="og:site_name" content="User/business name"/>
+
+
+
+<% content_for(:head) do %>
+<meta property="og:url"                content="<%= public_url(genurl: @page.url) %>" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="<%= @page.headline %>" />
+<meta property="og:description"        content="<%= @page.content %>" />
+<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+<% end  %>
+
 
 
 
