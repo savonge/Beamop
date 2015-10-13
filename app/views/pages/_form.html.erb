@@ -1,4 +1,4 @@
-<%= form_for(@page) do |f| %>
+<%= form_for(@page, html: { multipart: true }) do |f| %>
 
 
 
@@ -6,7 +6,7 @@
 <div class="forma">
     <%= f.text_field :headline, :placeholder => "What is Your Headline?", :class => "login"%>
     <%= f.text_field :content, :placeholder => "Add Some Details", :class => "login2"%>
-    <%= f.submit "Add Image", :class => "button add" %>
+    <%= f.file_field :picture, :placeholder => "Add Image", :class => "button add"  %>
     <%= f.submit "Add Logo", :class => "button add" %>
     <%= f.submit "Add Button", :class => "button add" %>
     <%= f.submit "Beam it", :class => "button beam" %><br>

@@ -4,6 +4,12 @@ class PagesController < ApplicationController
   before_filter :authenticate_user!, only: [:publish]
   # GET /pages
   # GET /pages.json
+
+
+
+
+
+
   def index
     @pages = Page.all
   end
@@ -14,25 +20,49 @@ class PagesController < ApplicationController
     @page = Page.find(params[:id])
     @page_bg = @page.bg_style || @page.backgroundimage
     @page_h1 = @page.headline_style || @page.h1_style
+    @custom_image = "style=\"background-image: url('#{@page.picture.url}')\"" if @page.picture.present?
+
   end
 
   def publish
 
     @user = current_user
-
     @page_h1 = params[:h1_style]
     @page_bg = params[:bg_style]
-
     @page.headline_style = params[:h1_style]
     @page.bg_style = params[:bg_style]
     @page.user = @user
     @page.set_url
+    @page.imgurl = findimage
     @page.save!
 
     # redirect_to public_path(genurl: @page.url)
 
     redirect_to @page
   end
+
+  def findimage
+
+    if @page.picture.present?
+      @page.picture.url
+    else
+      view_context.image_path("#{@page.bg_style}.jpg")
+    end
+
+  end
+
+  def select_bg_style
+    if @page.picture.present?
+    @custom_image
+    else
+    params[:bg_style]
+    end
+
+  end
+
+
+
+
 
   # GET /pages/new
   def new
@@ -87,6 +117,7 @@ def show_public_page
       @page = Page.find_by(url: params[:genurl])
       @page_bg = @page.bg_style
       @page_h1 = @page.headline_style
+      @custom_image = "style=\"background-image: url('#{@page.imgurl}')\""
       render :publish
     end
 
@@ -98,7 +129,7 @@ def show_public_page
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def page_params
-      params.require(:page).permit(:url, :headline, :content)
+      params.require(:page).permit(:url, :headline, :content, :picture)
     end
 
 

@@ -13,6 +13,19 @@ validates :content, :length => {
   :tokenizer => lambda { |str| str.scan(/\w+/) },
   :too_long  => "Content should be maximum 36 words"
 }
+
+
+has_attached_file :picture,
+    styles: { large: "800x800>", thumb: "100x100>" }
+
+  validates_attachment_content_type :picture,
+    content_type: /\Aimage\/.*\z/
+
+
+
+
+
+
 H1_STYLES = {
 
 ["wagon", "accelerator", "innovate", "innovation", "programming", "code", "tech", "start", "bootcamp", "internet", "app"] => "tech",
@@ -63,6 +76,25 @@ def set_url
   self.url = rand(1..1000)
 
 end
+
+# image upload
+def self.up
+   change_table :pages do |t|
+     t.attachment :picture
+   end
+ end
+
+ def self.down
+   drop_attached_file :pages, :picture
+ end
+
+# image upload
+
+
+
+
+
+
 
 
 end
