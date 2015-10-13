@@ -425,9 +425,9 @@ top: 0; left: 0; bottom: 0; right: 0;
 .tech3 {font-family: 'Fjalla One', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
-.neutral1 {font-family: 'Roboto', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
-.neutral2 {font-family: 'Roboto', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
-.neutral3 {font-family: 'Roboto', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.neutral1 {font-family: 'Amatic SC', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.neutral2 {font-family: 'Dancing Script', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.neutral3 {font-family: 'Handlee', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
 
@@ -748,3 +748,48 @@ border:none;
 .tg td{padding:10px 10px; background-color:#222222; height:10%; font-size: 2vw; vertical-align:middle; margin-bottom:50px;}
 .tg th{font-size:14px;color:white; height:90%; text-align: center; }
 .tg .tg-baqh{text-align:center;vertical-align:middle}
+
+
+
+.fileinput-button {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  border: 5px solid white !important;
+  background: transparent;
+  color: white;
+  height: 100px;
+  width: 32%;
+  margin-bottom:5px;
+  margin-right:5px;
+  text-align: left;
+  font-size: 2vw;
+  padding-left:30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter:'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+
+.fileinput-button span {
+  position: absolute;
+  text-align: left;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 8%;
+  bottom: 0;
+  line-height: 5vw;
+}

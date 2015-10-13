@@ -1,18 +1,17 @@
 <%= form_for(@page, html: { multipart: true }) do |f| %>
-
-
-
-
-<div class="forma">
+  <div class="forma">
     <%= f.text_field :headline, :placeholder => "What is Your Headline?", :class => "login"%>
     <%= f.text_field :content, :placeholder => "Add Some Details", :class => "login2"%>
-    <%= f.file_field :picture, :placeholder => "Add Image", :class => "button add"  %>
     <%= f.submit "Add Logo", :class => "button add" %>
     <%= f.submit "Add Button", :class => "button add" %>
+    <div class="fileinput-button add">
+      <span>Add Image</span>
+      <%= f.file_field :picture, :placeholder => "Add Image"  %>
+    </div>
+
+
     <%= f.submit "Beam it", :class => "button beam" %><br>
 
     <div class="notice"><%= @page.errors[:headline].to_sentence %><br><%= @page.errors[:content].to_sentence %></div>
-
+  </div>
 <% end %>
-</div>
-
