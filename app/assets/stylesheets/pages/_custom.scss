@@ -416,85 +416,77 @@ top: 0; left: 0; bottom: 0; right: 0;
 // headline styles
 
 
-.fashion1 {font-family: 'Abril Fatface', cursive; color: white;}
-.fashion2 {font-family: 'Vollkorn', serif; color: white;}
-.fashion3 {font-family: 'Voltaire', sans-serif; color: white;}
+.fashion1 {font-family: 'Abril Fatface', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.fashion2 {font-family: 'Vollkorn', serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.fashion3 {font-family: 'Voltaire', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
-.tech1 {font-family: 'Source Code Pro',; color: white;}
-.tech2 {font-family: 'Droid Sans', sans-serif; color: white;}
-.tech3 {font-family: 'Fjalla One', sans-serif; color: white;}
-
-
-.neutral1 {font-family: 'Roboto', sans-serif; color: white;}
-.neutral2 {font-family: 'Roboto', sans-serif; color: white;}
-.neutral3 {font-family: 'Roboto', sans-serif; color: white;}
+.tech1 {font-family: 'Source Code Pro',; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.tech2 {font-family: 'Droid Sans', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.tech3 {font-family: 'Fjalla One', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
-
-.music1 {font-family: 'Knewave', cursive; color: #ee005c;}
-.music2 {font-family: 'Permanent Marker', cursive; color: #ee005c;}
-.music3 {font-family: 'Permanent Marker', cursive; color: #ee005c;}
-// .music1 {font-family: 'Playfair Display', serif; color: #ee005c; background-color:white; display: block; width:50%; top:20%;
-// -webkit-transform: rotate(-30deg);
-// -moz-transform: rotate(-30deg);
-// -ms-transform: rotate(-30deg);
-// -o-transform: rotate(-30deg);
-// }
+.neutral1 {font-family: 'Roboto', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.neutral2 {font-family: 'Roboto', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.neutral3 {font-family: 'Roboto', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
 
-
-.travel1 {font-family: 'Sirin Stencil', cursive; color: white;}
-.travel2 {font-family: 'Poiret One', cursive; color: white;}
-.travel3 {font-family: 'Pacifico', cursive; color: white;}
-
+.music1 {font-family: 'Knewave', cursive; color: #ee005c; text-align: center; font-size: 10vw; padding-top:10%;}
+.music2 {font-family: 'Permanent Marker', cursive; color: #ee005c; text-align: center; font-size: 10vw; padding-top:10%;}
+.music3 {font-family: 'Permanent Marker', cursive; color: #ee005c; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
-.academic1 {font-family: 'Quicksand', sans-serif; color: white;}
-.academic2 {font-family: 'Kelly Slab', cursive; color: white;}
-.academic3 {font-family: 'Buda', cursive; color: white;}
+.travel1 {font-family: 'Sirin Stencil', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.travel2 {font-family: 'Poiret One', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.travel3 {font-family: 'Pacifico', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
-.personal1 {font-family: 'Amatic SC', cursive; color: white;}
-.personal2 {font-family: 'Dancing Script', cursive; color: white;}
-.personal3 {font-family: 'Handlee', cursive; color: white;}
+
+.academic1 {font-family: 'Quicksand', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.academic2 {font-family: 'Kelly Slab', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.academic3 {font-family: 'Buda', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+
+
+.personal1 {font-family: 'Amatic SC', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.personal2 {font-family: 'Dancing Script', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.personal3 {font-family: 'Handlee', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 
 // BG styles
 
 
-.bg-neutral1 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-neutral2 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-neutral3 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
+.bg-neutral1 {background-image: image-url("bg-neutral1.jpg");}
+.bg-neutral2 {background-image: image-url("bg-neutral2.jpg");}
+.bg-neutral3 {background-image: image-url("bg-neutral3.jpg");}
 
 
-.bg-tech1 {background-image: image-url("tech.jpg"); text-align: center; font-size: 10vw;  padding-top:10%;}
-.bg-tech2 {background-image: image-url("tech2.jpg"); text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-tech3 {background-image: image-url("tech3.jpg"); text-align: center; font-size: 10vw; padding-top:10%;}
+.bg-tech1 {background-image: image-url("bg-tech1.jpg");}
+.bg-tech2 {background-image: image-url("bg-tech2.jpg");}
+.bg-tech3 {background-image: image-url("bg-tech3.jpg");}
 
 
-.bg-fashion1 {background-image: image-url("fashion.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-fashion2 {background-image: image-url("fashion2.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-fashion3 {background-image: image-url("fashion3.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
+.bg-fashion1 {background-image: image-url("bg-fashion1.jpg");}
+.bg-fashion2 {background-image: image-url("bg-fashion2.jpg");}
+.bg-fashion3 {background-image: image-url("bg-fashion3.jpg");}
 
 
-.bg-music1 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-music2 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-music3 {background-image: image-url("music.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
+.bg-music1 {background-image: image-url("bg-music1.jpg");}
+.bg-music2 {background-image: image-url("bg-music2.jpg");}
+.bg-music3 {background-image: image-url("bg-music3.jpg");}
 
 
-.bg-travel1 {background-image: image-url("travel.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-travel2 {background-image: image-url("travel2.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-travel3 {background-image: image-url("travel.jpg");text-align: center; font-size: 10vw;  padding-top:10%;}
+.bg-travel1 {background-image: image-url("bg-travel1.jpg");}
+.bg-travel2 {background-image: image-url("bg-travel2.jpg");}
+.bg-travel3 {background-image: image-url("bg-travel3.jpg");}
 
 
-.bg-academic1 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-academic2 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-academic3 {background-image: image-url("academic.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
+.bg-academic1 {background-image: image-url("bg-academic1.jpg");}
+.bg-academic2 {background-image: image-url("bg-academic2.jpg");}
+.bg-academic3 {background-image: image-url("bg-academic3.jpg");}
 
-.bg-personal1 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-personal2 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
-.bg-personal3 {background-image: image-url("1.jpg");text-align: center; font-size: 10vw; padding-top:10%;}
+.bg-personal1 {background-image: image-url("bg-personal1.jpg");}
+.bg-personal2 {background-image: image-url("bg-personal2.jpg");}
+.bg-personal3 {background-image: image-url("bg-personal3.jpg");}
 
 
 // homepage form
