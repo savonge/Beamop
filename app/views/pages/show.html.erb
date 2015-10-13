@@ -82,8 +82,10 @@
     <th class="tg-baqh"style="width:20%"><iframe class="thumbframe3" src="<%= public_url(genurl: @page.url) %>"></iframe></th>
   </tr>
   <tr>
-    <td class="tg-baqh" colspan="3"><%= link_to "#{public_url(genurl: @page.url)}", public_url(genurl: @page.url), :target => "_blank" %></td>
-
+    <td class="tg-baqh" colspan="3">
+      <%= link_to "#{public_url(genurl: @page.url)}", public_url(genurl: @page.url), :target => "_blank" %>
+      <%= link_to "facebook", "https://www.facebook.com/sharer/sharer.php?u=" + public_url(genurl: @page.url) %>
+    </td>
   </tr>
 </table>
 
