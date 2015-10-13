@@ -1,7 +1,7 @@
 <!--
 <div class='poster <%= @page.backgroundimage %>'><p>
 
-<p class="headline <%= @page.h1_style %>">
+<p class="headlien <%= @page.h1_style %>">
   <%= @page.headline %>
 </p>
 
@@ -83,9 +83,9 @@
   </tr>
   <tr>
     <td class="tg-baqh" colspan="3">
-      <%= link_to "#{public_url(genurl: @page.url)}", public_url(genurl: @page.url), :target => "_blank" %>
-      <%= link_to "facebook", "https://www.facebook.com/sharer/sharer.php?u=" + public_url(genurl: @page.url) %>
+      <%= link_to "#{public_url(genurl: @page.url)}", public_url(genurl: @page.url), :target => "_blank" %> | <%= link_to "Share on Facebook", "https://www.facebook.com/sharer/sharer.php?u=" + public_url(genurl: @page.url) %>
     </td>
+    <td></td>
   </tr>
 </table>
 
