@@ -3,7 +3,8 @@
     <%= f.text_field :headline, :placeholder => "What is Your Headline?", :class => "login"%>
     <%= f.text_field :content, :placeholder => "Add Some Details", :class => "login2"%>
     <%= f.submit "Add Logo", :class => "button add" %>
-    <%= f.submit "Add Button", :class => "button add" %>
+    <%= f.select :btn, ['Add Button','Get a Promo Code','Subscribe', 'Buy','Join Mailing list'], {}, :class => "btn_dropdown" %>
+
     <div class="fileinput-button add">
       <span>Add Image</span>
       <%= f.file_field :picture, :placeholder => "Add Image"  %>
@@ -15,3 +16,5 @@
     <div class="notice"><%= @page.errors[:headline].to_sentence %><br><%= @page.errors[:content].to_sentence %></div>
   </div>
 <% end %>
+
+

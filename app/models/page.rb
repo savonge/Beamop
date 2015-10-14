@@ -1,5 +1,7 @@
 class Page < ActiveRecord::Base
 
+
+
   belongs_to :user
 
 validates :headline, :presence => true, :length => {
@@ -37,6 +39,7 @@ H1_STYLES = {
 
 
 }
+
 
 
   def style
