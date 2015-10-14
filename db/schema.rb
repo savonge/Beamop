@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151013100715) do
+ActiveRecord::Schema.define(version: 20151014130155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20151013100715) do
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
     t.string   "imgurl"
+    t.string   "btn"
+    t.string   "btn_style"
   end
 
   add_index "pages", ["user_id"], name: "index_pages_on_user_id", using: :btree

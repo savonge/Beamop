@@ -34,6 +34,7 @@ class PagesController < ApplicationController
     @page.user = @user
     @page.set_url
     @page.imgurl = findimage
+
     @page.save!
 
     # redirect_to public_path(genurl: @page.url)
@@ -129,7 +130,7 @@ def show_public_page
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def page_params
-      params.require(:page).permit(:url, :headline, :content, :picture)
+      params.require(:page).permit(:url, :headline, :content, :picture, :btn)
     end
 
 
