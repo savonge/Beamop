@@ -26,6 +26,8 @@ class PagesController < ApplicationController
 
   def publish
 
+    @page.update_attributes(page_params)
+
     @user = current_user
     @page_h1 = params[:h1_style]
     @page_bg = params[:bg_style]

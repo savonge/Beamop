@@ -1,5 +1,4 @@
 
-
 /* -------------------------------------
  * SASS code SPECIFIC TO your home page
  * (margin/padding adjustments, background image, etc..)
@@ -43,13 +42,10 @@ z-index: 5;
 
 
 .full2 {
-overflow: auto;
-position: absolute;
-  height: 2500px;
-  width: 100%;
-  padding-top: 120px;
-  left: 0px;
-  display: block;
+    width: 100%;
+    padding-top: 120px;
+    left: 0px;
+    display: block;
 }
 
 
@@ -65,26 +61,57 @@ position: absolute;
 //     z-index:500;
 //  }
 
+// .forma {
+// width: 50%;
+// position:relative;
+// top:100px;
+
+
+// }
+
+
 .formdiv {
-  width:100%;
-  height: 600px;
+ display: flex;
+    padding-left: 5%;
+    padding-top:150px;
+    width: 75%;
+    // align-items: center;
+    /* justify-content: center; */
+
 
 }
 
+
+// .bigtxt {
+// position: absolute;
+//   height: 1300px;
+//   width: 90%;
+//   left:5%;
+//   top: 800px;
+// line-height: 90%;
+// font-size: 7vw;
+// font-family: Abril Fatface;
+// color: white;
+// overflow:hidden;
+// }
+
+
+
 .bigtxt {
-position: absolute;
-  height: 1300px;
+   display: flex;
+   padding-top:50px;
+    padding-left: 5%;
   width: 90%;
-  left:5%;
-  top: 800px;
 line-height: 90%;
 font-size: 7vw;
 font-family: Abril Fatface;
 color: white;
-overflow:hidden;
 }
 
 .patxt {
+  display: flex;
+   padding-top:50px;
+   padding-left:5%;
   width: 75%;
   line-height: 120%;
   left:5%;
@@ -151,21 +178,17 @@ border: none !important;
 
 .navi2{
 
-  z-index: 5000;
-  background-color: black;
-  color: white;
-//   background-color: none !important;
-background:rgba(0,0,0,0.5) !important;
-border-style: none !important;
+  z-index: 5000 !important;
+//   color: white;
+// background:rgba(222,222,222,1) !important;
+// border-style: none !important;
 
-// color:white !important;
-// border-bottom: white solid thin;
 
 
 }
 
 .navilinks{
-color:white !important;
+color:grey!important;
 
 }
 
@@ -176,9 +199,9 @@ text-decoration: underline;
 }
 
 .centerlinks{
-
-margin-left: 40%;
-
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
@@ -307,14 +330,7 @@ position:absolute;
 }
 
 
-.forma {
-width: 50%;
-position:relative;
-top:100px;
-left:5%;
 
-
-}
 
 
 .bodytxt {
@@ -416,9 +432,9 @@ top: 0; left: 0; bottom: 0; right: 0;
 // headline styles
 
 
-.fashion1 {font-family: 'Abril Fatface', cursive; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
-.fashion2 {font-family: 'Vollkorn', serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
-.fashion3 {font-family: 'Voltaire', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
+.fashion1 {font-family: 'Abril Fatface', cursive; color:white; text-align: center; font-size: 10vw; padding-top:10%;}
+.fashion2 {font-family: 'Vollkorn', serif; color:white; text-align: center; font-size: 10vw; padding-top:10%;}
+.fashion3 {font-family: 'Voltaire', sans-serif; color:white; text-align: center; font-size: 10vw; padding-top:10%;}
 
 .tech1 {font-family: 'Source Code Pro',; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
 .tech2 {font-family: 'Droid Sans', sans-serif; color: white; text-align: center; font-size: 10vw; padding-top:10%;}
@@ -465,9 +481,32 @@ top: 0; left: 0; bottom: 0; right: 0;
 .bg-tech3 {background-image: image-url("bg-tech3.jpg");}
 
 
-.bg-fashion1 {background-image: image-url("bg-fashion1.jpg");}
-.bg-fashion2 {background-image: image-url("bg-fashion2.jpg");}
-.bg-fashion3 {background-image: image-url("bg-fashion3.jpg");}
+.bg-fashion1 {
+background-image: image-url("bg-fashion1.jpg");
+    color: white;
+        -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+}
+
+
+
+
+.bg-fashion2 {
+  background-image: image-url("bg-fashion2.jpg");
+  color: yellow !important;
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+.bg-fashion3 {
+  background-image: image-url("bg-fashion3.jpg");
+      -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
 
 
 .bg-music1 {background-image: image-url("bg-music1.jpg");}
@@ -647,13 +686,6 @@ width: 100%;
 
 
 
-
-
-
-
-
-
-
   .forma{
 width:90%;
     bottom: 30px;
@@ -687,7 +719,7 @@ background-size: 12%;
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
   input.button {
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -800,6 +832,8 @@ border:none;
 
 
 
+
+
 .fileinput-button {
   display: inline-block;
   position: relative;
@@ -849,6 +883,7 @@ border:none;
  background-color:white !important;
  border: none !important;
 
+
 }
 
 .custombtn:hover {
@@ -857,4 +892,93 @@ border:none;
  border: none !important;
 
 
+}
+
+@media only screen and (max-width : 768px) {
+  input.button {
+
+  }
+}
+
+.relative_button {
+display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.3333333;
+    border-radius: 2px;
+
+    color: black !important;
+    background-color: white !important;
+    border: none !important;
+}
+
+.relative_button:hover {
+color: black !important;
+ background:rgba(255,255,255,0.8) !important;
+ border: none !important;
+}
+
+
+@media only screen and (max-width : 500px) {
+  .relative_button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+
+     padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 2px;
+
+    color: black !important;
+    background-color: white !important;
+    border: none !important;
+
+  }
+}
+
+
+@media only screen and (max-width : 300px) {
+  .relative_button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+
+     padding: 5px 10px;
+    font-size: 7px;
+    line-height: 1.5;
+    border-radius: 2px;
+
+    color: black !important;
+    background-color: white !important;
+    border: none !important;
+
+  }
+}
+
+#gradient {
+  position:fixed;
+  width:100%;
+  height:100%;
+z-index:4999;
+top:0;
+background:rgba(0,0,0,0.8) !important;
 }

@@ -1,20 +1,7 @@
-<!--
-<div class='poster <%= @page.backgroundimage %>'><p>
-
-<p class="headlien <%= @page.h1_style %>">
-  <%= @page.headline %>
-</p>
-
-<p class="bodytxt ">
-  <%= @page.content %>
-</p>
 
 
-</div>
-<div class="back"><%= link_to '← Back', new_page_path(@page) %></div>
 
 
-<!-- <a href="/pages/new"><div class="back">← Back</div></a> -->
 
 <nav class="navbar navbar-default navi2">
   <div class="container-fluid">
@@ -26,55 +13,56 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=<%"new_page_path"%>><%= image_tag("beamop_white.png", :alt => "beamop", :class => "logo2") %></a>
+      <a class="navbar-brand" href="<%= new_page_path %>"><%= image_tag("beamop_grey.png", :alt => "beamop", :class => "logo2") %></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+ <ul class="nav navbar-nav navbar-left">
+        <% if current_user %>
+        <li>
+        <%= link_to "Logout", destroy_user_session_path, method: "delete"  %>
+        </li>
+        <% else %>
+        <li> <%= link_to "Login", user_session_path  %></li>
+        <% end %>
+</ul>
+
+
+
        <ul class="nav navbar-nav navbar-center centerlinks">
-         <li><%= link_to "← Back", new_page_path, :method => :get, :class => "navilinks" %></li>
-            <li><%= link_to "Next Design", page_path(@page, h1_style: @page_h1, bg_style: @page_bg),:class => "navilinks" %></li>
+         <li><%= link_to "← Back", new_page_path, :method => :get %></li>
+            <li><%= link_to "Next Design", page_path(@page, h1_style: @page_h1, bg_style: @page_bg) %></li>
 
        </ul>
+
+
       <ul class="nav navbar-nav navbar-right">
-      <% if current_user %>
-      <li>
-            <%= link_to "Logout", destroy_user_session_path, method: "delete", :class => "navilinks" %>
-      </li>
-     <% else %>
-     <li> <%= link_to "Login", user_session_path, :class => "navilinks" %></li>
-          <% end %>
+
+      <!-- <form class="navbar-form navbar-left" role="search" action='<%= publish_page_path(@page, h1_style: @page_h1, bg_style: @page_bg) %>' method='post'> -->
+      <%= form_for(@page, url: publish_page_path(@page, h1_style: @page_h1, bg_style: @page_bg), method: :post, html: { multipart: true, class: 'navbar-form' }) do |f| %>
+        <div class="form-group">
+          <%= f.file_field :picture, :placeholder => "Add Image", class: 'form-control'  %>
+
+        </div>
+
+<div class="form-group">
+         <%= f.select :btn, ['Add Button','Get a Promo Code','Subscribe', 'Buy','Join Mailing list'], {}, class: 'form-control' %>
+</div>
+
+        <button type="submit" class="btn btn-default">Publish Campaign</button>
+      <% end %>
 
 
-        <li>
-        <%= link_to "Publish Campaign", publish_page_path(@page, h1_style: @page_h1, bg_style: @page_bg), method: "post", :class => "navilinks" %></li>
-
-
-
-
-
-
-
-
-
-        <!-- <li class="dropdown navilinks">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Publish Campaign <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul> -->
-        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 <% if @page.published? %>
-<div class="showurl">
+<div id="gradient"></div>
+<div class="showurl" id="published">
 <table class="tg">
   <tr>
     <th class="tg-baqh" style="width:20%; text-align:right;"><iframe class="thumbframe1" src="<%= public_url(genurl: @page.url) %>"></iframe></th>
@@ -84,6 +72,8 @@
   <tr>
     <td class="tg-baqh" colspan="3">
       <%= link_to "#{public_url(genurl: @page.url)}", public_url(genurl: @page.url), :target => "_blank" %> | <%= link_to "Share on Facebook", "https://www.facebook.com/sharer/sharer.php?u=" + public_url(genurl: @page.url) %>
+       |
+
     </td>
     <td></td>
   </tr>
@@ -91,6 +81,7 @@
 
 
 </div>
+
 <% end %>
 
 
@@ -101,7 +92,9 @@
 <%= @page.headline %>
   <p class="bodytxt ">
   <%= @page.content %><br><br>
-  <button type="button" class="btn btn-default btn-lg custombtn"><%= @page.btn %></button>
+  <% if @page.show_button? %>
+    <button type="button" class="relative_button"><%= @page.btn %></button>
+   <% end %>
   </p>
 </div>
 
