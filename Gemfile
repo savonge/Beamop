@@ -61,3 +61,4 @@ gem 'puma',           group: :production
 gem "devise"
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip'
+gem 'autoprefixer-rails'
