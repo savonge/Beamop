@@ -14,7 +14,9 @@
 <%= @page.headline %>
   <p class="bodytxt ">
   <%= @page.content %><br><br>
-  <button type="button" class="btn btn-default"><%= @page.btn %></button>
+ <% if @page.show_button? %>
+    <button type="button" class="relative_button"><%= @page.btn %></button>
+   <% end %>
 
   </p>
 </div>
