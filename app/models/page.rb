@@ -32,10 +32,11 @@ H1_STYLES = {
 
 ["wagon", "accelerator", "innovate", "innovation", "programming", "code", "tech", "start", "bootcamp", "internet", "app"] => "tech",
 ["fashion", "sale", "clothing", "bags", "shoes", "buotique", "%", "shop", "off", "special", "pants"] => "fashion",
-["surf", "vacation", "flight", "hotel", "package", "destination", "destinations", "asia", "america", "europe", "africa" ] => "travel",
+["surf", "vacation", "flight", "hotel", "package", "destination", "destinations", "asia", "america", "europe", "africa", "travel"  ] => "travel",
 ["show", "live", "tickets", "concert", "beers", "tour", "venue", "get", "warm up", "warm-up"] => "music",
 ["class", "lecture", "professor", "topic", "subject","classroom", "university", "campus", "college" ] => "academic",
-["love", "wedding", "anniversary", "happy birthday", "wish","kisses", "hugs", "you" ] => "personal"
+["love", "wedding", "anniversary", "happy birthday", "wish","kisses", "hugs", "you" ] => "personal",
+["check" ] => "fashion-demo"
 
 
 }
@@ -80,21 +81,11 @@ def set_url
 
 end
 
-# image upload
-def self.up
-   change_table :pages do |t|
-     t.attachment :picture
-   end
- end
-
- def self.down
-   drop_attached_file :pages, :picture
- end
-
-# image upload
 
 
-
+def show_button?
+btn != "Add Button"
+end
 
 
 
